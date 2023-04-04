@@ -1,0 +1,282 @@
+:root{ 
+    /* primary */
+
+    --lightred: hsl(0, 100%, 67%);
+    --orangeyyellow: hsl(39, 100%, 56%);
+    --greenteal: hsl(166, 100%, 37%);
+    --cobaltblue: hsl(234, 85%, 45%);
+
+
+    /* gradient */
+    /* background */
+        --lightslateblue: hsl(252, 100%, 67%);
+        --lightroyalblue: hsl(241, 81%, 54%);
+
+
+    /* circle */
+        --violetblue: hsla(256, 72%, 46%, 1);
+        --persianblue: hsla(241, 72%, 46%, 0);
+
+
+        /* neutral */
+
+        --white: hsl(0, 0%, 100%);
+        --paleblue: hsl(221, 100%, 96%);
+        --lightlavender: hsl(241, 100%, 89%);
+        --darkgrayblue: hsl(224, 30%, 27%);
+}
+
+@font-face {
+    font-family: Pepe;
+    src: url(./assets/fonts/HankenGrotesk-VariableFont_wght.ttf);
+}
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Pepe;
+    
+}
+    
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+
+.purple-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    height: 480px;
+    border-radius: 20px;
+    /* background-color: hsl(252,100%,67%); */
+    background: linear-gradient(180deg,hsl(252,100%,67%) 10%, hsl(241,81%,54%) 80%);
+    position: relative;
+    
+}
+
+.purple-box h1{
+    position: absolute;
+    font-size: 30px;
+    top: 50px;
+    color: white;
+    opacity: 0.8;
+    font-weight: 500;
+}
+
+.parra{
+    position: absolute;
+    font-size: 20px;
+    text-align: center;
+    z-index: 10;
+    margin: 30px;
+    color: rgba(240, 255, 255, 0.575);
+}
+
+p::first-line{
+    font-size: 70px;
+    font-weight: bold;
+    color: white;
+}
+
+
+
+
+.purple-box h2{
+    /* position: absolute; */
+    position: relative;
+    top: 120px;
+    color: white;
+    font-size: 30px;
+    
+
+}
+
+.great-parra{
+    position: absolute;
+    bottom: 30px;
+    color: white;
+    opacity: 0.8;
+    text-align: center;
+}
+
+.circle{
+    width: 180px;
+    height: 180px;
+    background-color: white;
+    border-radius: 50%;
+    background: linear-gradient(180deg,hsl(252,100%,67%) 10%, hsl(241,81%,54%) 100%);
+    position: absolute;
+    top: 120px;
+    
+
+    
+}
+
+
+
+
+/* white box */
+
+.white-box{
+    background-color: var(--white);
+    box-shadow: 11px 9px 11px -2px rgba(99,97,97,0.75);
+    width: 370px;
+    height: 480px;
+    border-radius: 20px;
+    /* display: flex;   */
+    position: relative;
+    right: 30px;
+    z-index: -1;
+   
+}
+
+.complete-box{
+    margin-left: 70px;
+    margin-top: 50px;
+    
+}
+
+.puntajes{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    
+   
+}
+
+.reaction{
+    width: 240px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: var(--paleblue);
+    text-align: center;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    
+}
+
+.memory{
+    width: 240px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: var(--paleblue);
+    text-align: center;
+    position: absolute;
+    top: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.verbal{
+    width: 240px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: var(--paleblue);
+    text-align: center;
+    position: absolute;
+    top: 120px;
+    display: flex;
+    align-items: center;
+}
+
+.visual{
+    width: 240px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: var(--paleblue);
+    text-align: center;
+    position: absolute;
+    top: 180px;
+    display: flex;
+    align-items: center;
+}
+
+.puntajes img{
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+}
+
+.puntajes h4{
+    margin-left: 10px;
+}
+
+.reaction h4{
+    color: var(--lightred);
+}
+
+.reaction h6{
+    margin-left: 60px;
+    font-size: 14px;
+}
+
+
+.memory h4{
+    color: var(--orangeyyellow);
+}
+
+.memory h6{
+    margin-left: 60px;
+    font-size: 14px;
+}
+
+.verbal h4{
+    color: var(--greenteal);
+}
+
+.verbal h6{
+    margin-left: 60px;
+    font-size: 14px;
+}
+
+.visual h4{
+    color: var(--lightroyalblue);
+}
+
+.visual h6{
+    margin-left: 60px;
+    font-size: 14px;
+}
+
+.btn{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    
+
+    
+    
+}
+
+.btn button{
+    width: 240px;
+    height: 40px;
+    text-align: center;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 250px;
+    border: none;
+    border-radius: 20px;
+    background-color: var(--darkgrayblue);
+    font-size: 16px
+}
+
+
+a{
+    text-decoration: none;
+    color: white;
+   
+}
